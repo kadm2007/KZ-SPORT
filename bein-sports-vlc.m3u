@@ -1,0 +1,29 @@
+#EXTM3U
+#PLAYLIST: BEIN SPORTS - VacoTV/BuzCup
+# Source: Reverse engineered from VacoTV app v2.0.0 (com.buzcup.buz_cup)
+# Date: 2026-06-17
+#
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 1" group-title="BEIN"
+https://man1ted.com/watch/beee1.m3u8?md5=M5km5O-puJk4hirHlydEbg&expires=1781689811
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 2" group-title="BEIN"
+https://man1ted.com/watch/beee2.m3u8?md5=gHswiDzrQ_1iCgNQJOOJJA&expires=1781689812
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 3" group-title="BEIN"
+https://man1ted.com/watch/beee3.m3u8?md5=9SLbhO8iT0qJg3LAnfT6Kw&expires=1781689813
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 4" group-title="BEIN"
+https://man1ted.com/watch/beee4.m3u8?md5=3ok5UivkemBqzQrNra1KXQ&expires=1781689814
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 5" group-title="BEIN"
+https://man1ted.com/watch/beee5.m3u8?md5=0e62oMVNfsAZsyrKY41tdQ&expires=1781689815
+#EXTINF:-1 tvg-id="" tvg-name="BEIN Sports 6" group-title="BEIN"
+https://man1ted.com/watch/beee6.m3u8?md5=wIF-yleuFpSrkMUR19FL_g&expires=1781689816
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 1" group-title="BEIN"
+https://man1ted.com/watch/beemax1.m3u8?md5=WvybW6VN0pn5gObXmI9zLA&expires=1781689817
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 2" group-title="BEIN"
+https://man1ted.com/watch/beemax2.m3u8?md5=yMN4TZRy4Mz_F49zHRgT-g&expires=1781689818
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 3" group-title="BEIN"
+https://man1ted.com/watch/beemax3.m3u8?md5=XE9IlIcJSYxdL1wcNzZiwg&expires=1781689819
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 4" group-title="BEIN"
+https://man1ted.com/watch/beemax4.m3u8?md5=Wq5SaIYBy6nQJGBFBnR-sw&expires=1781689821
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 5" group-title="BEIN"
+https://man1ted.com/watch/beemax5.m3u8?md5=4aO03WlJY3K3MfoHnomKAA&expires=1781689822
+#EXTINF:-1 tvg-id="" tvg-name="BEIN MAX 6" group-title="BEIN"
+https://man1ted.com/watch/beemax6.m3u8?md5=M6MhS3LHICGEO5OS_hEd0w&expires=1781689823

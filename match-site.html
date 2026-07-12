@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KZ SPORT | التصميم الزجاجي الفاخر</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-area">
+      <div class="logo-icon">KZ</div>
+      <div class="logo-text">SPORT</div>
+    </div>
+    <button class="menu-trigger" id="menuBtn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <div class="sidebar" id="sidebarMenu">
+    <div class="nav-item active" id="nav-news" onclick="switchSection('news')">🏠 الصفحة الرئيسية (الأخبار)</div>
+    <div class="nav-item" id="nav-live" onclick="switchSection('live')">📺 منصة البث المباشر</div>
+    <div class="nav-item" id="nav-settings" onclick="switchSection('settings')">⚙️ إعدادات المتصل البصمية</div>
+  </div>
+
+  <main>
+    
+    <div id="section-news" class="app-section active">
+      <h2 style="font-weight: 900; margin-bottom: 25px; font-size: 22px; display: flex; align-items: center; gap: 10px; color: var(--text-main);">📰مستجدات وتقارير الملاعب الحصرية</h2>
+      <div class="news-hero-grid">
+        <div class="news-card">
+          <div class="news-img-placeholder">⚽ <span>KZ Live</span> <div class="news-tag">دوري الأبطال</div></div>
+          <div class="news-content">
+            <h3 class="news-title">رسمياً: الاتحاد الأوروبي يثبت المواعيد والقرعة الجديدة لمباريات الدور ربع النهائي بنظام الحزمة المتزامنة.</h3>
+            <span class="news-date">منذ دقيقتين</span>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-placeholder">🏆 <span>KZ Live</span> <div class="news-tag">الميركاتو</div></div>
+          <div class="news-content">
+            <h3 class="news-title">تحركات سرية لإتمام صفقة تبادلية كبرى في الدوري الإنجليزي الممتاز قبل إغلاق نافذة التسجيل الصيفية.</h3>
+            <span class="news-date">منذ ساعة واحدة</span>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-placeholder">⏱️ <span>KZ Live</span> <div class="news-tag">غرفة التحليل</div></div>
+          <div class="news-content">
+            <h3 class="news-title">تحليل فني متكامل يوضح كيف غيرت الخطط المعتمدة على الأجنحة الوهمية خريطة الأهداف في الجولات الأخيرة.</h3>
+            <span class="news-date">منذ 3 ساعات</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="section-live" class="app-section">
+      <div class="theater-wrapper">
+        <div class="video-container">
+          <video id="video" controls autoplay playsinline></video>
+        </div>
+        <div class="stream-meta">
+          <h3 id="currentChannel" style="font-weight: 900; font-size: 17px; color: var(--text-main);">اختر قناة لبدء العرض المباشر</h3>
+          <div class="live-indicator" id="statusBadge"><span></span>⏸ متوقف</div>
+        </div>
+        <div class="quality-shelf">
+          <span style="font-size: 13px; color: var(--text-muted); font-weight: 700; margin-left: 8px;">التحكم بالدقة:</span>
+          <button class="q-pill active" id="q-auto" onclick="changeQuality('auto', this)">تلقائي ذكي</button>
+          <button class="q-pill" id="q-low" onclick="changeQuality('low', this)">توفير البيانات</button>
+          <button class="q-pill" id="q-medium" onclick="changeQuality('medium', this)">جودة متوسطة</button>
+          <button class="q-pill" id="q-high" onclick="changeQuality('high', this)">عالية HD</button>
+        </div>
+      </div>
+      <div class="channels-masonry" id="channelsGrid"></div>
+    </div>
+
+    <div id="section-settings" class="app-section">
+      <h2 style="font-weight: 900; margin-bottom: 25px; text-align: center; color: var(--text-main);">⚙️ تفاصيل وبصمة البيئة المتصلة حالياً</h2>
+      <div class="settings-deck">
+        <div class="device-info-row"><span class="info-lbl">نظام العميل الأساسي:</span><span class="info-val" id="dev-ua">-</span></div>
+        <div class="device-info-row"><span class="info-lbl">أبعاد ودقة الشاشة الحالية:</span><span class="info-val" id="dev-screen">-</span></div>
+        <div class="device-info-row"><span class="info-lbl">محرك تصفح الويب المتصل:</span><span class="info-val" id="dev-vendor">-</span></div>
+        <div class="device-info-row"><span class="info-lbl">لغة الجهاز الافتراضية:</span><span class="info-val" id="dev-lang">-</span></div>
+        <div class="device-info-row"><span class="info-lbl">حالة المزامنة والربط:</span><span class="info-val" style="color: #007ff7; background: rgba(0,127,247,0.05);">Proxy متصل ومؤمن</span></div>
+      </div>
+    </div>
+
+  </main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
